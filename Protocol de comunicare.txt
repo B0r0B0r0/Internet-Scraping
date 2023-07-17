@@ -1,0 +1,2 @@
+1 (nume prod, complet sau partial) --> returneaza lista de produse
+2 (parte nume prod) --> returneaza lista cu preturile produsului de pe Altex, Emag, Evomag, etc

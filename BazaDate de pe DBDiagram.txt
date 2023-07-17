@@ -1,0 +1,25 @@
+
+Table Utilizatori {
+  id int [pk, increment]
+  username varchar
+  }
+
+Table Produse {
+  id int [pk, increment]
+  denumire varchar
+  
+}
+
+Table UtilizatoriProduse {
+  id int [pk, increment]
+  id_utilizatori int [ref: > Utilizatori.id]
+  id_produse int [ref: > Produse.id]
+  pseudonimProdus varchar
+}
+
+Table Preturi{
+  id int [pk,increment]
+  id_produs int [ref: > Produse.id]
+  magazin varchar
+  pret float
+}

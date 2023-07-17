@@ -1,0 +1,5 @@
+CALL add_user_if_not_exists('boro'); --> Adauga un user daca si numai daca acesta nu exista in bd
+CALL get_pseudonime_by_username('boro'); --> Afiseaza toate produsele (Dupa pseudonim) asociate cu un user
+CALL get_preturi_by_pseudonim('laptop', 'Emag'); --> Afiseaza toate preturile unui produs, de la un magazin
+.CALL adauga_pret('laptop GDS956FD', 'Emag', 2200, '20:00'); --> Adauga un pret unui produs dintr-un magazin
+.CALL add_produs_for_user('boro', 'laptop 5435FDSH', 'Laptop gaming'); --> adauga un produs

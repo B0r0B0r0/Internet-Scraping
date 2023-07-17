@@ -1,0 +1,94 @@
+19.06)
+
+- Instalez ubuntu pe masina virtuala
+
+20.06)
+
+- Reinstalez ubuntu si rezolv problemele cu terminalul
+- Intrat pe https://towardsdatascience.com/web-scraping-basics-82f8b5acd45c pentru 
+informatii.
+- Cat se instaleaza SO, incerc sa folosesc si inteleg codul de la bullet-ul anterior pe 
+un environment python de pe windows
+- https://stackoverflow.com/questions/72366930/why-is-this-requests-get-not-working-with-this-url
+- https://www.quora.com/Why-doesnt-Pythons-requests-get-work-for-websites-like-Adidas-com
+- https://stackoverflow.com/questions/69141055/python-requests-does-not-get-website-that-opens-on-browser
+- https://stackoverflow.com/questions/73975454/how-to-get-prices-from-html-by-python
+- https://beautiful-soup-4.readthedocs.io/en/latest/
+- m-am documentat in internet scraping folosing requests si selenium, incercand coduri pe environment-ul de
+pe windows
+- Am facut mediul de lucru pentru python in Ubuntu, pe masina virtuala + instalare biblioteci necesare
+- Am incercat imbunatatirea codului pentru a selecta doar pretul.
+
+21.06)
+
+- Am reusit sa scot o lista de preturi a tuturor produselor in urma unui search pe altex
+- Am pus pe masina virtuala
+- Incerc sa fac acelasi lucru si pentru alte site-uri
+- Am facut scripturile aproape complet de scraping pentru Altex, Evomag, Mediagalaxy, Emag si Pcgarare. Trebuie
+doar sa pot sa dau argumente la apelarea scriptului si sa preiau date.
+- Am modificat scripturile astfel incat sa imi returneze o lista cu numele produselor. Aceste scripturi
+le voi apela in cazul in care utilizatorul nu stie exact toata denumirea produsului pe care il cauta.
+
+22.06)
+
+- Am terminat de luat numele pe cele 5 scripturi facute
+- Invat cum pot sa apelez scripturi din alte scripturi 
+- https://datatofish.com/one-python-script-from-another/
+- https://www.w3docs.com/snippets/python/how-can-i-make-one-python-file-run-another.html
+- Incep sa fac o simpla interfata in python pentru aplicatie
+- https://realpython.com/pysimplegui-python/
+- https://www.geeksforgeeks.org/user-input-in-pysimplegui/
+- https://superfastpython.com/multiprocessing-pipe-in-python/
+- https://www.pythontutorial.net/python-basics/python-write-text-file/
+- Incerc sa fac o comunicare intre procese. Incerc comunicarea intre aplicatia "Manager", care va lucra
+in background si care va fi responsabila cu apelarea scripturilor si aplicatia interfata, care va rula
+doar atunci cand utilizatorul o va deschide. Fac acest lucru folosind un fisier text.
+- Am creat un protocol de comunicare intre procese
+- https://stackoverflow.com/questions/69321890/how-can-i-create-a-column-that-is-scrollable-in-pysimplegui
+- https://docs.python.org/3/library/subprocess.html
+- Pentru a minimiza timpul de asteptare pentru scraping, incerc sa impart sarcinile pe threaduri
+- https://www.geeksforgeeks.org/multithreading-python-set-1/
+- Aproape am reusit multithreading-ul
+
+23.06)
+
+- Incerc sa gasesc variante pentru multithreading intrucat timpul de asteptare este inca prea mare
+- https://realpython.com/async-io-python/
+- https://docs.python.org/3/library/multiprocessing.html
+- m-am documentat in ceea ce inseamna programare asincrona, paralelea, pe procese, subprocese sau threaduri
+
+26.06)
+
+- Am reusit sa folosesc biblioteca multiprocessing pentru a deschide 5 subprocese si a le rula pentru 
+luarea de nume de produs.
+- Am facut partea de front-end la luarea preturilor
+- Am facut scripturile care imi verifica disponibilitatea unui produs si cauta pretul
+- Incep sa portez tot pe linux, dupa care sa incep baza de date
+- https://www.w3schools.com/python/python_mysql_getstarted.asp
+- https://codeinthehole.com/tips/how-to-set-up-mysql-for-python-on-ubuntu/
+- Trebuie sa rezolv cateva buguri datorate portarii
+
+27.06)
+
+- Incerc sa inlocuiesc googlesearch cu selenium
+- https://stackoverflow.com/questions/65515657/how-to-return-the-link-to-the-first-youtube-video-after-a-search-in-selenium-pyt
+- https://www.reddit.com/r/learnpython/comments/supub9/how_to_get_url_of_the_first_google_search_result/
+- instalez si incep baza de date
+- Am gandit schema bazei de date
+
+28.06)
+
+- Am inceput lucrul cu baza de date
+- https://www.geeksforgeeks.org/executing-shell-commands-with-python/
+- Am inceput sa integrez baza de date in cod
+- Am integrat aproape complet baza de date cu partea de gui
+- https://matplotlib.org/stable/tutorials/intermediate/artists.html
+
+29.06)
+
+- Am terminat de integrat baza de date
+- Am automatizat procesul de cautare pe mai multe procese
+- Am implementat complet graficele 
+- https://stackoverflow.com/questions/24518522/run-python-script-at-startup-in-ubuntu
+- https://dev.to/0xbf/use-mkfifo-to-create-named-pipe-linux-tips-5bbk
+- https://itslinuxfoss.com/run-script-startup-ubuntu/
